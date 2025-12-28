@@ -1,0 +1,150 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.to-doBox {
+  height: 500px;
+  width: 300px;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#addText {
+  width: 95%;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 20px;
+  background-color: bisque;
+  border: 0;
+}
+
+#addBtn {
+  background-color: orangered;
+  height: 32px;
+  width: 25%;
+  position: relative;
+  left: 75%;
+  bottom: 32px;
+  border-radius: 20px;
+  border: 0;
+  color: white;
+}
+
+#taskList{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 340px;
+  border: 0;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: gray; /* Optional: makes it look "completed" */
+}
+
+.task-dlte {
+  background-color: transparent;
+  border: none;
+  transform: scale(1.15);
+  margin: 0;
+}
+
+#taskList li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(100%, 100%, 100%);
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; /* Makes it round */
+  vertical-align: middle;
+  border: 2px solid #ddd;
+  appearance: none; /* Hide default styling for modern browsers */
+  -webkit-appearance: none; /* For Safari */
+  outline: none;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  background-color: dodgerblue; /* The checkmark styling will be browser-dependent */
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  height: 90vh;
+  width: 30%;
+  z-index: 2;
+  border: 1px solid grey;
+  position: absolute;
+  transform: translateX(-500px);
+  transition: transform 0.15s;
+  padding: 10px;
+  margin: 0px;
+}
+nav * {
+  margin: 0;
+  padding: 0;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+ul img {
+  width: 20px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#navBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 48%;
+  right: 17%;
+}
+
+@media (min-width: 1024px) {
+  /* These styles only apply if the screen is 1024px or wider */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+  nav {
+    background: rgba(0, 0, 0, 0.5);
+    height: 90vh;
+    width: 30%;
+    z-index: 2;
+    border: 1px solid grey;
+    position: absolute;
+    transform: translateX(-1500px);
+    transition: transform 0.15s;
+    padding: 10px;
+    margin: 0px;
+  }
+}
