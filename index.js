@@ -67,7 +67,7 @@ navBtn.addEventListener('click', function() {
         nav.style.transform = "translateX(-200px)";
     }
     else {
-        nav.style.transform = "translateX(-500px)";
+        nav.style.transform = "translateX(-100vw)";
     }
 });
 

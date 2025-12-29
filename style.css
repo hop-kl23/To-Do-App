@@ -89,7 +89,7 @@ nav {
   z-index: 2;
   border: 1px solid grey;
   position: absolute;
-  transform: translateX(-500px);
+  transform: translateX(-100vw);
   transition: transform 0.15s;
   padding: 10px;
   margin: 0px;
