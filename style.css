@@ -122,29 +122,3 @@ ul {
   bottom: 48%;
   right: 17%;
 }
-
-@media (min-width: 1024px) {
-  /* These styles only apply if the screen is 1024px or wider */
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    background-color: black;
-    margin-top: 50px;
-  }
-  
-  nav {
-    background: rgba(0, 0, 0, 0.5);
-    height: 90vh;
-    width: 30%;
-    z-index: 2;
-    border: 1px solid grey;
-    position: absolute;
-    transform: translateX(-1500px);
-    transition: transform 0.15s;
-    padding: 10px;
-    margin: 0px;
-  }
-}
