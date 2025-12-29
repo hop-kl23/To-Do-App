@@ -64,7 +64,7 @@ const nav = document.getElementById("navbar");
 navBtn.addEventListener('click', function() {
     navShown = !navShown;
     if (navShown) {
-        nav.style.transform = "translateX(-200px)";
+        nav.style.transform = "translateX(-34vw)";
     }
     else {
         nav.style.transform = "translateX(-100vw)";
@@ -75,10 +75,10 @@ if (window.matchMedia("(min-width: 1024px)").matches) {
     navBtn.addEventListener('click', function() {
         navShown = !navShown;
         if (navShown) {
-            nav.style.transform = "translateX(0px)";
+            nav.style.transform = "translateX(-34vw)";
         }
         else {
-            nav.style.transform = "translateX(-1500px)";
+            nav.style.transform = "translateX(-100vw)";
         }
     });
 }
